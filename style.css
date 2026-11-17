@@ -1,0 +1,47 @@
+:root {
+  --zemin: #0d0d10;
+  --panel: #16161b;
+  --cizgi: #2a2a31;
+  --yazi: #e6e0d2;
+  --soluk: #a49f94;
+  --amber: #e0a040;
+  --kan: #b4404a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { background: var(--zemin); }
+body {
+  margin: 0;
+  background: var(--zemin);
+  color: var(--yazi);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--amber); }
+a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+header {
+  border-bottom: 1px solid var(--cizgi);
+  background: linear-gradient(180deg, #19140e 0%, var(--zemin) 100%);
+}
+.kap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+header .kap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 18px; padding-bottom: 18px; flex-wrap: wrap; }
+.marka { font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--yazi); text-decoration: none; font-size: 18px; }
+.marka span { color: var(--amber); }
+nav a { margin-left: 16px; color: var(--soluk); text-decoration: none; font-size: 15px; }
+nav a:first-child { margin-left: 0; }
+nav a[aria-current="page"], nav a:hover { color: var(--yazi); }
+main { padding: 32px 0 56px; }
+h1 { font-size: clamp(28px, 6vw, 40px); line-height: 1.15; margin: 0 0 12px; letter-spacing: .02em; }
+h2 { font-size: 22px; margin: 36px 0 8px; border-top: 1px solid var(--cizgi); padding-top: 24px; }
+h3 { font-size: 18px; margin: 24px 0 4px; color: var(--amber); }
+p, li { color: var(--yazi); }
+.soluk { color: var(--soluk); font-size: 15px; }
+.kart { background: var(--panel); border: 1px solid var(--cizgi); border-left: 3px solid var(--amber); padding: 16px 18px; margin: 20px 0; }
+.dil { display: inline-block; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--zemin); background: var(--amber); padding: 2px 8px; margin-bottom: 8px; }
+table { border-collapse: collapse; width: 100%; font-size: 15px; }
+th, td { text-align: left; border-bottom: 1px solid var(--cizgi); padding: 8px 6px; vertical-align: top; }
+footer { border-top: 1px solid var(--cizgi); padding: 20px 0 32px; color: var(--soluk); font-size: 14px; }
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  nav a { margin-left: 12px; }
+}
