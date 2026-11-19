@@ -45,3 +45,11 @@ footer { border-top: 1px solid var(--cizgi); padding: 20px 0 32px; color: var(--
   body { font-size: 16px; }
   nav a { margin-left: 12px; }
 }
+/* M-pazar: basın kiti */
+img, video { max-width: 100%; height: auto; }
+.genis { display: block; width: 100%; height: auto; margin: 16px 0; border: 1px solid var(--cizgi); background: #000; }
+.galeri { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; margin: 12px 0 8px; }
+.galeri a { display: block; border: 1px solid var(--cizgi); }
+.galeri img { display: block; width: 100%; height: auto; }
+.olgu th { width: 34%; color: var(--soluk); font-weight: 600; }
+.ikon { border-radius: 22%; border: 1px solid var(--cizgi); }
